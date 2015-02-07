@@ -1,0 +1,10 @@
+{
+  "name": "legis-web-client",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "author": "ronaldofs",
+  "license": "ISC"
+}
