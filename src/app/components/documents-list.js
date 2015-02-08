@@ -5,7 +5,11 @@ var { Link } = Router;
 class DocumentsList {
   add(document) {
     return (
-      <li><Link to="document" params={document}>{document.title}</Link></li>
+      <li key={document.slug}>
+        <Link to="document" params={document}>
+          {document.title}
+        </Link>
+      </li>
     );
   }
   render() {

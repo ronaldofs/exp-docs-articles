@@ -11,7 +11,7 @@ var routes = (
   <Route handler={Layout}>
     <Route name="home" path="/" handler={Home} />
     <Route name="documents" path="/documents" handler={Documents} />
-    <Route name="document" path="/documents/:id" handler={Document} />
+    <Route name="document" path="/documents/:slug" handler={Document} />
   </Route>
 );
 

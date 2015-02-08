@@ -3,10 +3,11 @@ var Router = require('react-router');
 
 class Document {
   render() {
-    var id = this.getParams().id;
+    var slug = this.getParams().slug;
+
     return (
-      <div className="document" key={id}>
-        <h1>Document {id}</h1>
+      <div className="document" key={slug}>
+        <h1>Document: {slug}</h1>
       </div>
     );
   }
