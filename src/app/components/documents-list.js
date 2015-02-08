@@ -1,8 +1,12 @@
 var React = require('react');
+var Router = require('react-router');
+var { Link } = Router;
 
 class DocumentsList {
   add(document) {
-    return <li>{document.title}</li>
+    return (
+      <li><Link to="document" params={document}>{document.title}</Link></li>
+    );
   }
   render() {
     return (
